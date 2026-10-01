@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="description">
+            <h3>Convertisseur de bases</h3>
+            <p>Nombre, base de depart et base d'arrivée</p>
+        </div>
+
+        <p>Nombre à convertir</p>
+        <input type="text" placeholder="Nombre" id="nbre">
+
+    <div class="choice">
+        <div class="choice-elmt">
+            <label for="base_depart">Base de départ</label><br>
+            <select name="choice" id="base_depart">
+                <option value="d">decimal (d)</option>
+                <option value="h">Hexadecimal (h)</option>
+                <option value="b">Binaire (b)</option>
+                <option value="o">octal (o)</option>
+            </select>
+        </div>
+
+        <div class="choice-elmt">
+            <label for="base_arrive">Base d'arrivée</label><br>
+            <select name="choice-2" id="base_arrive">
+                <option value="d">decimal (d)</option>
+                <option value="h">Hexadecimal (h)</option>
+                <option value="b">Binaire (b)</option>
+                <option value="o">octal (o)</option>
+            </select>
+        </div>
+    </div>
+    <button class="btn" id="send">Convertir</button>
+
+    <div class="result">
+        <h4>Resultat :</h4>
+        <p id="result">0</p>
+    </div>
+    </div>
+   
+    <script src="static/script.js"></script>
+</body>
+</html>
