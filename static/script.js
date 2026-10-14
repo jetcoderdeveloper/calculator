@@ -11,14 +11,16 @@ document.getElementById('send').addEventListener('click',function(){
     .then(response=> response.json())
     .then(data =>{
         if (data.erreur){
-            document.getElementById('result').innerHTML=data.erreur;
             document.getElementById('result').style.color="red"
+            document.getElementById('result').innerHTML=data.erreur;
         }else{
+            document.getElementById('result').style.color="#10915f"
             document.getElementById('result').innerHTML=data.resultat;
         }
     })
 });
 
 nbre.addEventListener('input',()=>{
+    document.getElementById('result').style.color="#10915f"
     document.getElementById('result').innerHTML=0;
 })

@@ -1,0 +1,109 @@
+
+body{
+    display: flex;
+    min-height: 100vh;
+    background-color: black;
+    overflow-y: hidden;
+    color: white;
+    /* margin: auto 5%; */
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    border: 1px white solid;
+    overflow: hidden;
+    padding: 3%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
+    
+}
+
+.description{
+    line-height: 10px;
+}
+
+.description h3{
+    font-size: 35px;
+}
+
+p{
+    font-size: 20px;
+}
+
+input{
+    padding: 4%;
+    border-radius: 10px;
+    margin: 0 0 35px 0;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    font-size: 20px;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+}
+
+.choice{
+    display: flex;
+    justify-content: space-between;
+}
+
+.choice-elmt{
+    line-height: 30px;
+    text-align: center;
+}
+
+label{
+    margin: 10px;
+    font-size: 20px;
+}
+
+select{
+    background-color: transparent;
+    color: white;
+    padding: 5%;
+    font-size: 20px;
+    border-radius: 10px;  
+}
+
+select option{
+    background-color: black;
+    color: white;
+}
+
+.btn{
+    margin: 50px 0;
+    padding: 3%;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.result{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result p{
+    color: #10915f;
+}
+
+.result h4{
+    font-size: 25px;
+}
+
+@media (max-width: 1220px) {
+    .container{
+        width: 20%;
+    }
+    
+}
